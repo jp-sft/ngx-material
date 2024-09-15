@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+
+    .fab {
+        margin-top: auto;
+        margin-bottom: 16px;
+        background-color: var(--sys-primary);
+        color: var(--sys-on-primary);
+    }
+}

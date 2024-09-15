@@ -1,0 +1,38 @@
+.drawer-container {
+    height: 100vh;
+  }
+  
+  .navigation-drawer {
+    width: 250px;
+    background-color: var(--sys-surface);
+    color: var(--sys-on-surface);
+  }
+  
+  mat-list-item {
+    color: var(--sys-on-surface);
+    transition: background-color 0.2s;
+  }
+  
+  mat-list-item:hover {
+    background-color: rgba(var(--sys-outline), 0.08);
+  }
+  
+  mat-icon {
+    font-size: 24px;
+    color: var(--sys-on-surface);
+  }
+  
+  .badge {
+    margin-left: auto;
+    margin-right: 16px;
+    background-color: var(--sys-error);
+    color: var(--sys-on-error);
+    border-radius: 12px;
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  

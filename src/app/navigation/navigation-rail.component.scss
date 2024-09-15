@@ -1,130 +1,26 @@
-
 .navigation-rail-container {
     height: 100vh;
 }
 
 .navigation-rail {
     width: 80px;
+    height: 100%;
     background-color: var(--sys-surface);
     color: var(--sys-on-surface);
     padding: 8px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    box-shadow: var(--mat-elevation-z4);
 }
 
-.menu-icon {
+.menu-icon-container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 16px;
-}
 
-.nav-item-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 8px;
-    width: 100%;
-}
-
-.nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 56px;
-    height: 34px;
-    border-radius: 16px;
-    transition: background-color 0.2s, color 0.2s;
-    position: relative; /* Necessary for absolute positioning of the badge */
-}
-
-.nav-item.active {
-    background-color: var(--sys-secondary-container);
-    color: var(--sys-on-secondary-container);
-}
-
-.nav-item:hover:not(.active) {
-    background-color: rgba(var(--sys-outline), 0.08);
-}
-
-.nav-item:focus:not(.active) {
-    outline: 2px solid var(--sys-outline);
-    outline-offset: -2px;
-}
-
-.nav-item:active:not(.active) {
-    background-color: var(--sys-surface-container);
-}
-
-mat-icon {
-    font-size: 24px;
-    margin: 0!important;
-    color: var(--sys-on-surface);
-}
-
-.nav-item.active mat-icon {
-    color: var(--sys-on-secondary-container);
-}
-
-.nav-item:hover mat-icon,
-.nav-item:focus mat-icon,
-.nav-item:active mat-icon {
-    color: var(--sys-on-secondary-container);
-}
-
-.label {
-    font-family: var(--sys-label-medium-font);
-    font-size: var(--sys-label-medium-size);
-    font-weight: var(--sys-label-medium-weight);
-    letter-spacing: var(--sys-label-medium-tracking);
-    line-height: var(--sys-label-medium-line-height);
-    color: var(--sys-on-surface-variant);
-    margin-top: 4px; /* Spacing between the button and the label */
-}
-
-.nav-item.active + .label {
-    color: var(--sys-on-secondary-container);
-}
-
-.nav-item:hover + .label,
-.nav-item:focus + .label,
-.nav-item:active + .label {
-    color: var(--sys-on-secondary-container);
-}
-
-.badge {
-    position: absolute; /* Make badge position absolute */
-    top: -5px; /* Adjust to align on top right of the icon */
-    right: 0; /* Adjust as needed to position correctly */
-    transform: translate(50%, -50%);
-    background-color: var(--sys-error);
-    color: var(--sys-on-error);
-    border-radius: 8px;
-    padding: 2px;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 10px; /* Ensure badge has a consistent size */
-    height: 10px;
-    line-height: 1; /* Center text vertically */
-}
-
-.fab {
-    margin-top: auto;
-    margin-bottom: 16px;
-    background-color: var(--sys-primary);
-    color: var(--sys-on-primary);
-}
-
-.fab-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-
-    .fab {
-        margin-top: auto;
+    .menu-icon {
         margin-bottom: 16px;
-        background-color: var(--sys-primary);
-        color: var(--sys-on-primary);
     }
 }
